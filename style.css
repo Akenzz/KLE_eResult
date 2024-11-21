@@ -46,6 +46,15 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media only screen and (min-width: 1024px) {
+    .clg{
+        margin-top: 32px;
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 50%;
+    }
+}
+
 .clg{
     font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -325,4 +334,21 @@ label {
     background-color: #ffc9c9;
     color: #9d0404;
     border-radius: 2px;
+}
+
+#outputTable {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+#outputTable th, #outputTable td {
+    border: 2px solid #d3d3d3;
+    padding: 8px;
+}
+#outputTable th {
+    background-color: #f2f2f2;
+}
+
+.xlresult{
+    margin: 10px;
 }
