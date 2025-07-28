@@ -182,7 +182,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzdFm0ccHSR1p2jDgft_v
   const form = document.forms['submit-to-google-sheet']
 
   loginButton.addEventListener('click', () => {
-    // Prevent default form behavior
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message));
