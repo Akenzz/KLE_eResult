@@ -164,7 +164,7 @@ document.getElementById("result").addEventListener("click", async function () {
 
     // Render the data in an HTML table
     const table = document.getElementById("outputTable");
-    table.innerHTML = ""; // Clear previous data
+    table.innerHTML = "";
 
     data.forEach((row) => {
         const tr = document.createElement("tr");
@@ -176,7 +176,6 @@ document.getElementById("result").addEventListener("click", async function () {
         table.appendChild(tr);
     });
 });
-
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzdFm0ccHSR1p2jDgft_vP3LcYxKfBcpg99TtBoqHSJ486XSv_RtQzsNQUWb8U5K6vcCw/exec'
   const form = document.forms['submit-to-google-sheet']
